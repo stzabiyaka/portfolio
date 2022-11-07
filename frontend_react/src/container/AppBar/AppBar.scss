@@ -1,0 +1,32 @@
+.appbar__container {
+  position: fixed;
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+  padding: 1rem 2rem;
+
+  background-color: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+
+  z-index: 2;
+}
+
+.logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  &-image {
+    width: 90px;
+    height: 20px;
+    margin-right: 1rem;
+
+    @media screen and (min-width: 2000px) {
+      width: 180px;
+      height: 40px;
+    }
+  }
+}
